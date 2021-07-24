@@ -23,7 +23,12 @@
 - `text`: 标注文字
 - `path`: 一个string组成的list，每个string是五度值调值，可以为曲折调，但不接受双折调
 - `color`: 可以使用给每个调类的预设颜色，不分阴阳的调类请随意选取一个。也可以直接传入「金茶草柳蔚靛雪墨」中的一种，或任何matplotlib接受的颜色字符串（如：`'red'`或`'"#FDCD00"'`），不传入此参数，则依次在上述颜色种循环使用
-    
+
+- 保存图片：
+
+`up.fig.savefig('file.png')`
+
+可以分别通过`up.fig`与`up.ax`获取图片的`matplotlib.Figure`与`matplotlib.Axes`对象。
   
 # 技术细节
 `unt_plot.py`种定义了两个类`UntPlotBase`与`UntPlot`，后者是前者的子类，可以调用父类方法实现更底层的操作。
