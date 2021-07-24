@@ -31,4 +31,4 @@
 可以分别通过`up.fig`与`up.ax`获取图片的`matplotlib.Figure`与`matplotlib.Axes`对象。
   
 # 技术细节
-`unt_plot.py`种定义了两个类`UntPlotBase`与`UntPlot`，后者是前者的子类，可以调用父类方法实现更底层的操作。
+`unt_plot.py`中定义了两个类`UntPlotBase`与`UntPlot`，后者是前者的子类，可以调用父类方法实现更底层的操作。
